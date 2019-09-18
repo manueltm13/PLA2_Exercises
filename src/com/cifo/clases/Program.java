@@ -1,5 +1,6 @@
+package com.cifo.clases;
 
-public class Test {
+public class Program {
 
 	public static void main(String[] args) {
 		// Employer employer1 = new Employer(); Compilation error

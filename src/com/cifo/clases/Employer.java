@@ -1,3 +1,4 @@
+package com.cifo.clases;
 public class Employer {
 	private String name;
 	private String dni;
