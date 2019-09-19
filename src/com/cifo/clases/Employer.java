@@ -82,6 +82,9 @@ public class Employer {
 			this.grossSalary = Math.round(grossSalary * 100f) / 100f;
 	};
 	
+	/**
+	 * @return The net salary
+	 */
 	public float getNetSalary() {
 		return Math.round(getGrossSalary() * getIRPF() * 100f) / 100f;
 	}
