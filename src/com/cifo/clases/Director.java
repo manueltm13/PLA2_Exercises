@@ -1,48 +1,49 @@
 package com.cifo.clases;
 
 /**
- * 	
+ *
  * @author manuel
  */
 // It's enough to declare that the super-class implements the interface Expressions. 
 // The sub-class will implement it implicitly without declaring that it implements it.
 // https://stackoverflow.com/a/31261936
-public class Director extends Employer{
-	private int stockOptions;
-	
-	public Director(String name, String dni) throws IllegalArgumentException {
-		super(name, dni);
-	}
+public class Director extends Employer {
 
-	/**
-	 * @return the stockOptions
-	 */
-	public int getStockOptions() {
-		return stockOptions;
-	}
+    private int stockOptions;
 
-	/**
-	 * @param stockOptions the stockOptions to set
-	 */
-	public void setStockOptions(int stockOptions) {
-		this.stockOptions = stockOptions;
-	}
+    public Director(String name, String dni) throws IllegalArgumentException {
+        super(name, dni);
+    }
 
-	@Override
-	public float getNetSalary() {
-		return super.getNetSalary() + (getStockOptions() * 0.1f);
-	}
+    /**
+     * @return the stockOptions
+     */
+    public int getStockOptions() {
+        return stockOptions;
+    }
 
-	@Override
-	public String toString() {
-		return "[name: " + getName() + ", dni: " + getDni() + ", stockOptions: " + 
-				getStockOptions() + ", grossSalary: " + getGrossSalary() + 
-				", netSalary: " + getNetSalary() + "]";
-	}
+    /**
+     * @param stockOptions the stockOptions to set
+     */
+    public void setStockOptions(int stockOptions) {
+        this.stockOptions = stockOptions;
+    }
 
-	@Override
-	public String salutation() {
-		return "Dear Director";
-	}
+    @Override
+    public float getNetSalary() {
+        return super.getNetSalary() + (getStockOptions() * 0.1f);
+    }
+
+    @Override
+    public String toString() {
+        return "[name: " + getName() + ", dni: " + getDni() + ", stockOptions: "
+                + getStockOptions() + ", grossSalary: " + getGrossSalary()
+                + ", netSalary: " + getNetSalary() + "]";
+    }
+
+    @Override
+    public String salutation() {
+        return "Dear Director";
+    }
 
 }

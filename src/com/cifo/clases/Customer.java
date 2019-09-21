@@ -1,69 +1,71 @@
 package com.cifo.clases;
 
 /**
- * 	
+ *
  * @author manuel
  */
-public class Customer implements Expressions{
-	private String name;
-	private String email;
-	private String type;
-	
-	public Customer() {
-		setName("");
-		setEmail("");
-		setType("");
-	}
+public class Customer implements Expressions {
 
-	/**
-	 * @return the name
-	 */
-	public String getName() {
-		return name;
-	}
+    private String name;
+    private String email;
+    private String type;
 
-	/**
-	 * @param name the name to set
-	 */
-	public void setName(String name) {
-		this.name = name;
-	}
+    public Customer() {
+        setName("");
+        setEmail("");
+        setType("");
+    }
 
-	/**
-	 * @return the email
-	 */
-	public String getEmail() {
-		return email;
-	}
+    /**
+     * @return the name
+     */
+    public String getName() {
+        return name;
+    }
 
-	/**
-	 * @param email the email to set
-	 */
-	public void setEmail(String email) {
-		this.email = email;
-	}
+    /**
+     * @param name the name to set
+     */
+    public final void setName(String name) {
+        this.name = name;
+    }
 
-	/**
-	 * @return the type
-	 */
-	public String getType() {
-		return type;
-	}
+    /**
+     * @return the email
+     */
+    public String getEmail() {
+        return email;
+    }
 
-	/**
-	 * @param type the type to set
-	 */
-	public void setType(String type) {
-		this.type = type;
-	}
+    /**
+     * @param email the email to set
+     */
+    public final void setEmail(String email) {
+        this.email = email;
+    }
 
-	public String toString() {
-		return "[name: " + getName() + ", email: " + getEmail() + ", type: " + getType() + "]";
-	}
+    /**
+     * @return the type
+     */
+    public String getType() {
+        return type;
+    }
 
-	@Override
-	public String salutation() {
-		return "Dear " + getName();
-	}
+    /**
+     * @param type the type to set
+     */
+    public final void setType(String type) {
+        this.type = type;
+    }
+
+    @Override
+    public String toString() {
+        return "[name: " + getName() + ", email: " + getEmail() + ", type: " + getType() + "]";
+    }
+
+    @Override
+    public String salutation() {
+        return "Dear " + getName();
+    }
 
 }
