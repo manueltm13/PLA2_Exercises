@@ -121,21 +121,36 @@ public class Program {
 			System.out.println(ex + " ¡¡¡ Ko !!!");
 		}
 
+		Employer emp = new Employer("Employer name", "99999999X");
+		emp.setGrossSalary(4000);
+		System.out.println(emp.salutation());
+		System.out.println(emp);
+
 		Administrator adm = new Administrator("Administrator name", "99999999X");
 		adm.setGrossSalary(4000);
 		adm.setSection("adm section");
+		System.out.println(adm.salutation());
 		System.out.println(adm);
 		
 		Manager man = new Manager("Manager name", "99999999X");
 		man.setGrossSalary(5000);
 		man.setDiets(1000);
 		man.setDepartment("man department");
+		System.out.println(man.salutation());
 		System.out.println(man);
 		
 		Director dir = new Director("Director name", "99999999X");
 		dir.setGrossSalary(5000);
 		dir.setStockOptions(10000);
+		System.out.println(dir.salutation());
 		System.out.println(dir);
+
+		Customer cus = new Customer();
+		cus.setName("Customer name");
+		cus.setEmail("customer@email");
+		cus.setType("Customer type");
+		System.out.println(cus.salutation());
+		System.out.println(cus);
 	}
 
 	

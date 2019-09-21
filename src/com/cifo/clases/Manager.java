@@ -1,6 +1,13 @@
 package com.cifo.clases;
 
-public class Manager extends Employer {
+/**
+ * 	
+ * @author manuel
+ */
+// It's enough to declare that the super-class implements the interface Expressions. 
+// The sub-class will implement it implicitly without declaring that it implements it.
+// https://stackoverflow.com/a/31261936
+public class Manager extends Employer{
 	private String department;
 	private int diets;
 	
@@ -46,6 +53,12 @@ public class Manager extends Employer {
 		return "[name: " + getName() + ", dni: " + getDni() + ", department: " + 
 				getDepartment() + ", diets: " + getDiets() + ", grossSalary: " + 
 				getGrossSalary() + ", netSalary: " + getNetSalary() + "]";
+	}
+
+	@Override
+	public String salutation() {
+		// TODO Auto-generated method stub
+		return "Dear Manager";
 	}
 
 }
