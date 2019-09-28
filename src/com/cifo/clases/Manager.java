@@ -58,7 +58,6 @@ public class Manager extends Employer {
 
     @Override
     public String salutation() {
-        // TODO Auto-generated method stub
         return "Dear Manager";
     }
 
