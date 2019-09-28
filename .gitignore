@@ -1,4 +1,7 @@
 /bin/
-/nbproject/private/
 /build/
 /dist/
+/manifest.mf
+/build.xml
+/.project
+/.classpath
