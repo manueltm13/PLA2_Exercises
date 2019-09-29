@@ -120,7 +120,7 @@ public class Program {
             System.out.println(ex + " ¡¡¡ Ko !!!");
         }
 
-        Employee emp = new Employee("Employer name", "99999999X");
+        Employee emp = new Employee("Employee name", "99999999X");
         emp.setGrossSalary(4000);
         System.out.println(emp.salutation());
         System.out.println(emp);
