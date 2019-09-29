@@ -7,7 +7,7 @@ package com.cifo.clases;
 // It's enough to declare that the super-class implements the interface Expressions. 
 // The sub-class will implement it implicitly without declaring that it implements it.
 // https://stackoverflow.com/a/31261936
-public class Manager extends Employer {
+public class Manager extends Employee {
 
     private String department;
     private int diets;

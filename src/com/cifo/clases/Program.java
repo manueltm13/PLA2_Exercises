@@ -3,11 +3,11 @@ package com.cifo.clases;
 public class Program {
 
     public static void main(String[] args) {
-        // Employer employer1 = new Employer(); Compilation error
+        // Employee employer1 = new Employee(); Compilation error
 
         //employer1.setName("Manuel");
         //employer1.setDni("99999999X");
-        Employer employer1 = new Employer("Manuel", "99999999X");
+        Employee employer1 = new Employee("Manuel", "99999999X");
         System.out.println(employer1.toString() + "\n");
 
         // Salary
@@ -67,7 +67,7 @@ public class Program {
             System.out.println("GrossSalary 3000f, 3000, 2250: " + employer1.toString() + " ¡¡¡ Ko !!!");
 
         try {
-            Employer e1 = new Employer(null, "99999999X"); // Exception null name
+            Employee e1 = new Employee(null, "99999999X"); // Exception null name
             System.out.println("Name null: " + e1.toString() + " ¡¡¡ Ko !!!");
         } catch (IllegalArgumentException ex) {
             System.out.println(ex + " Ok");
@@ -76,7 +76,7 @@ public class Program {
         }
 
         try {
-            Employer e1 = new Employer("", "99999999X"); // Exception blank name
+            Employee e1 = new Employee("", "99999999X"); // Exception blank name
             System.out.println("Name blank: " + e1.toString() + " ¡¡¡ Ko !!!");
         } catch (IllegalArgumentException ex) {
             System.out.println(ex + " Ok");
@@ -85,7 +85,7 @@ public class Program {
         }
 
         try {
-            Employer e1 = new Employer("  ", "99999999X"); // Exception blank name
+            Employee e1 = new Employee("  ", "99999999X"); // Exception blank name
             System.out.println("Name blank: " + e1.toString() + " ¡¡¡ Ko !!!");
         } catch (IllegalArgumentException ex) {
             System.out.println(ex + " Ok");
@@ -94,7 +94,7 @@ public class Program {
         }
 
         try {
-            Employer e1 = new Employer("Manuel   ", null); // Exception null DNI
+            Employee e1 = new Employee("Manuel   ", null); // Exception null DNI
             System.out.println("Name null: " + e1.toString() + " ¡¡¡ Ko !!!");
         } catch (IllegalArgumentException ex) {
             System.out.println(ex + " Ok");
@@ -103,7 +103,7 @@ public class Program {
         }
 
         try {
-            Employer e1 = new Employer("Manuel   ", ""); // Exception blank DNI
+            Employee e1 = new Employee("Manuel   ", ""); // Exception blank DNI
             System.out.println("Name blank: " + e1.toString() + " ¡¡¡ Ko !!!");
         } catch (IllegalArgumentException ex) {
             System.out.println(ex + " Ok");
@@ -112,7 +112,7 @@ public class Program {
         }
 
         try {
-            Employer e1 = new Employer("Manuel   ", "   "); // Exception blank DNI
+            Employee e1 = new Employee("Manuel   ", "   "); // Exception blank DNI
             System.out.println("Name blank: " + e1.toString() + " ¡¡¡ Ko !!!");
         } catch (IllegalArgumentException ex) {
             System.out.println(ex + " Ok");
@@ -120,7 +120,7 @@ public class Program {
             System.out.println(ex + " ¡¡¡ Ko !!!");
         }
 
-        Employer emp = new Employer("Employer name", "99999999X");
+        Employee emp = new Employee("Employer name", "99999999X");
         emp.setGrossSalary(4000);
         System.out.println(emp.salutation());
         System.out.println(emp);

@@ -7,7 +7,7 @@ package com.cifo.clases;
 // It's enough to declare that the super-class implements the interface. 
 // The sub-class will implement it implicitly without declaring that it implements it.
 // https://stackoverflow.com/a/31261936
-public class Employer implements Expressions {
+public class Employee implements Expressions {
 
     private String name;
     private String dni;
@@ -17,7 +17,7 @@ public class Employer implements Expressions {
     ///**
     // * Default constructor
     // */
-    //public Employer() {
+    //public Employee() {
     //	setName("");
     //	setDni("");
     //	setGrossSalary(0);
@@ -30,7 +30,7 @@ public class Employer implements Expressions {
      * @param dni
      * @throws IllegalArgumentException Where name or DNI are null or blank
      */
-    public Employer(String name, String dni) throws IllegalArgumentException{
+    public Employee(String name, String dni) throws IllegalArgumentException{
         if (name == null)
             throw new IllegalArgumentException("The name is null");
         else if (name.isBlank())
