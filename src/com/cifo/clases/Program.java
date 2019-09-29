@@ -3,68 +3,68 @@ package com.cifo.clases;
 public class Program {
 
     public static void main(String[] args) {
-        // Employee employer1 = new Employee(); Compilation error
+        // Employee employee1 = new Employee(); Compilation error
 
-        //employer1.setName("Manuel");
-        //employer1.setDni("99999999X");
-        Employee employer1 = new Employee("Manuel", "99999999X");
-        System.out.println(employer1.toString() + "\n");
+        //employee1.setName("Manuel");
+        //employee1.setDni("99999999X");
+        Employee employee1 = new Employee("Manuel", "99999999X");
+        System.out.println(employee1.toString() + "\n");
 
         // Salary
-        employer1.setGrossSalary(-.010f);
-        if (employer1.getGrossSalary() == 0 && employer1.getNetSalary() == 0)
+        employee1.setGrossSalary(-.010f);
+        if (employee1.getGrossSalary() == 0 && employee1.getNetSalary() == 0)
             System.out.println("GrossSalary -.010f Ok");
         else
-            System.out.println("GrossSalary -.010f, 0, 0: " + employer1.toString() + " ¡¡¡ Ko !!!");
+            System.out.println("GrossSalary -.010f, 0, 0: " + employee1.toString() + " ¡¡¡ Ko !!!");
 
-        employer1.setGrossSalary(1000.99f);
-        if (employer1.getGrossSalary() == 1000.99f && employer1.getNetSalary() == 850.84f)
+        employee1.setGrossSalary(1000.99f);
+        if (employee1.getGrossSalary() == 1000.99f && employee1.getNetSalary() == 850.84f)
             System.out.println("GrossSalary 1000.99f Ok");
         else
-            System.out.println("GrossSalary 1000.99f, 1000.99, 850.84: " + employer1.toString() + " ¡¡¡ Ko !!!");
+            System.out.println("GrossSalary 1000.99f, 1000.99, 850.84: " + employee1.toString() + " ¡¡¡ Ko !!!");
 
-        employer1.setGrossSalary(1000.004f);
-        if (employer1.getGrossSalary() == 1000.00f && employer1.getNetSalary() == 850.00f)
+        employee1.setGrossSalary(1000.004f);
+        if (employee1.getGrossSalary() == 1000.00f && employee1.getNetSalary() == 850.00f)
             System.out.println("GrossSalary 1000.004f Ok");
         else
-            System.out.println("GrossSalary 1000.004f, 1000.00, 850.00: " + employer1.toString() + " ¡¡¡ Ko !!!");
+            System.out.println("GrossSalary 1000.004f, 1000.00, 850.00: " + employee1.toString() + " ¡¡¡ Ko !!!");
 
-        employer1.setGrossSalary(1000.005f);
-        if (employer1.getGrossSalary() == 1000.01f && employer1.getNetSalary() == 850.01f)
+        employee1.setGrossSalary(1000.005f);
+        if (employee1.getGrossSalary() == 1000.01f && employee1.getNetSalary() == 850.01f)
             System.out.println("GrossSalary 1000.005f Ok");
         else
-            System.out.println("GrossSalary 1000.005f, 1000.01, 850.01: " + employer1.toString() + " ¡¡¡ Ko !!!");
+            System.out.println("GrossSalary 1000.005f, 1000.01, 850.01: " + employee1.toString() + " ¡¡¡ Ko !!!");
 
-        employer1.setGrossSalary(1000.024f);
-        if (employer1.getGrossSalary() == 1000.02f && employer1.getNetSalary() == 850.02f)
+        employee1.setGrossSalary(1000.024f);
+        if (employee1.getGrossSalary() == 1000.02f && employee1.getNetSalary() == 850.02f)
             System.out.println("GrossSalary 1000.024f Ok");
         else
-            System.out.println("GrossSalary 1000.024f, 1000.02, 850.02: " + employer1.toString() + " ¡¡¡ Ko !!!");
+            System.out.println("GrossSalary 1000.024f, 1000.02, 850.02: " + employee1.toString() + " ¡¡¡ Ko !!!");
 
-        employer1.setGrossSalary(1000.025f);
-        if (employer1.getGrossSalary() == 1000.03f && employer1.getNetSalary() == 850.03f)
+        employee1.setGrossSalary(1000.025f);
+        if (employee1.getGrossSalary() == 1000.03f && employee1.getNetSalary() == 850.03f)
             System.out.println("GrossSalary 1000.025f Ok");
         else
-            System.out.println("GrossSalary 1000.025f, 1000.03, 850.03: " + employer1.toString() + " ¡¡¡ Ko !!!");
+            System.out.println("GrossSalary 1000.025f, 1000.03, 850.03: " + employee1.toString() + " ¡¡¡ Ko !!!");
 
-        employer1.setGrossSalary(1000.034f);
-        if (employer1.getGrossSalary() == 1000.03f && employer1.getNetSalary() == 850.03f)
+        employee1.setGrossSalary(1000.034f);
+        if (employee1.getGrossSalary() == 1000.03f && employee1.getNetSalary() == 850.03f)
             System.out.println("GrossSalary 1000.034f Ok");
         else
-            System.out.println("GrossSalary 1000.034f, 1000.03, 850.03: " + employer1.toString() + " ¡¡¡ Ko !!!");
+            System.out.println("GrossSalary 1000.034f, 1000.03, 850.03: " + employee1.toString() + " ¡¡¡ Ko !!!");
 
-        employer1.setGrossSalary(1000.035f);
-        if (employer1.getGrossSalary() == 1000.04f && employer1.getNetSalary() == 850.03f)
+        employee1.setGrossSalary(1000.035f);
+        if (employee1.getGrossSalary() == 1000.04f && employee1.getNetSalary() == 850.03f)
             System.out.println("GrossSalary 1000.035f Ok");
         else
-            System.out.println("GrossSalary 1000.035f, 1000.04, 850.03: " + employer1.toString() + " ¡¡¡ Ko !!!");
+            System.out.println("GrossSalary 1000.035f, 1000.04, 850.03: " + employee1.toString() + " ¡¡¡ Ko !!!");
 
         // IRPF
-        employer1.setGrossSalary(3000f);
-        if (employer1.getGrossSalary() == 3000f && employer1.getNetSalary() == 2250f)
+        employee1.setGrossSalary(3000f);
+        if (employee1.getGrossSalary() == 3000f && employee1.getNetSalary() == 2250f)
             System.out.println("GrossSalary 3000f Ok");
         else
-            System.out.println("GrossSalary 3000f, 3000, 2250: " + employer1.toString() + " ¡¡¡ Ko !!!");
+            System.out.println("GrossSalary 3000f, 3000, 2250: " + employee1.toString() + " ¡¡¡ Ko !!!");
 
         try {
             Employee e1 = new Employee(null, "99999999X"); // Exception null name
